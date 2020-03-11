@@ -1,0 +1,38 @@
+// 块级元素垂直水平居中
+.flex-center(@flex-direction: row) {
+  display: flex;
+  flex-direction: @flex-direction;
+  align-items: center;
+  justify-content: center;
+}
+// 块级元素垂直居中
+.flex-center-vertical(@flex-direction: row) {
+  display: flex;
+  flex-direction: @flex-direction;
+  align-items: center;
+}
+// 块级元素水平居中
+.flex-center-horizontal(@flex-direction: row) {
+  display: flex;
+  flex-direction: @flex-direction;
+  justify-content: center;
+}
+// 行内元素垂直水平居中
+.inline-flex-center(@flex-direction: row) {
+  display: inline-flex;
+  flex-direction: @flex-direction;
+  align-items: center;
+  justify-content: center;
+}
+// 行内元素垂直居中
+.inline-flex-center-vertical(@flex-direction: row) {
+  display: inline-flex;
+  flex-direction: @flex-direction;
+  align-items: center;
+}
+// 行内元素水平居中
+.inline-flex-center-horizontal(@flex-direction: row) {
+  display: inline-flex;
+  flex-direction: @flex-direction;
+  justify-content: center;
+}

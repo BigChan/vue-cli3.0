@@ -1,0 +1,21 @@
+// 单行文本溢出显示省略号
+.text-ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  word-wrap: normal;
+  word-wrap: break-word;
+  word-break: break-all;
+}
+
+// 多行文本溢出显示省略号
+.multi-text-ellipsis(@line: 2) {
+  display: -webkit-box;
+
+  /*! autoprefixer: ignore next */
+  -webkit-box-orient: vertical;
+
+  -webkit-line-clamp: @line;
+
+  overflow: hidden;
+}
